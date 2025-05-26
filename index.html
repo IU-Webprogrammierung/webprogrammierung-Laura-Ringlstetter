@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="NextDesk: Your guide to finding the perfect desk space. Explore locations, criteria, and learn more about us.">
         <title>NextDesk - Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="Css/styles.css">
     </head>
     <body>
         <header>
@@ -14,15 +14,15 @@
                 <div class="navbar-container">
                     <a href="index.html">NextDesk</a>
                 <ul class="navbar__menu">
-                    <li class="navbar-item"><a href="locations.html">Locations</a></li>
-                    <li class="navbar-item"><a href="criteria.html">Criteria</a></li>
-                    <li class="navbar-item"><a href="about.html">About me</a></li>
-                    <li class="navbar-item"><button href="connect.html">Let's connect</button></li>
+                    <li class="navbar-item"><a href="locations.html" aria-label="Go to Page Locations">Locations</a></li>
+                    <li class="navbar-item"><a href="criteria.html" aria-label="Go to Page Criteria">Criteria</a></li>
+                    <li class="navbar-item"><a href="about.html" aria-label="Go to Page About me">About me</a></li>
+                    <li class="navbar-item"><a href="contact.html" aria-label="Go to contact page">Let's connect</a></li>
                 </ul>
                 </div>
             </nav>
         </header>
-        <main id="main">
+        <main id="main" tabindex="-1"> <!--Main content area with tabindex for screen readers--> 
             <section class="hero" aria-labelledby="hero-image">
                 <img src="images/hero-image.jpg" alt="A modern office space with desks and computers" class="hero-image">
             </section>
@@ -32,28 +32,34 @@
                      et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
                      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
-                <button class="intro-button" href='about.html'>About me</button>
+                <a class="intro-button" href='about.html'>About me</a>
             </section>
-            <section class="teaser-locations" aria-labelledby="top-3-locations-heading">
+            <section class="teaser-locations" aria-labelledby="top3-locations-heading">
                 <h2 id="top3-locations-heading">Overview of the top 3 locations</h2>
                 <ul class="teaser">
                     <li class="teaser-item">
-                        <img src="images/location1.jpg" alt="Barcelona" class="teaser-image">
-                        <h3>Barcelona</h3>
-                        <p>Short description of Location 1.</p>
-                        <button class="teaser-button" href='barcelona.html'>View Details</button>
+                        <article> <!-- Teaser sind inhaltlich eigenständig -->
+                            <img src="images/location1.jpg" alt="Barcelona" class="teaser-image">
+                            <h3>Barcelona</h3>
+                            <p>Short description of Location 1.</p>
+                            <a class="teaser-button" href='locations/barcelona.html' aria-label="View details about Barcelona">View Details</a>
+                        </article> 
                     </li>
                     <li class="teaser-item">
-                        <img src="images/location2.jpg" alt="Buenos Aires" class="teaser-image">
-                        <h3>Buenos Aires</h3>
-                        <p>Short description of Location 2.</p>
-                        <button class="teaser-button" href='buenosaires.html'>View Details</button>
+                        <article>
+                            <img src="images/location2.jpg" alt="Buenos Aires" class="teaser-image">
+                            <h3>Buenos Aires</h3>
+                            <p>Short description of Location 2.</p>
+                            <a class="teaser-button" href='locations/buenosaires.html' aria-label="View details about Buenos Aires">View Details</a>
+                        </article>   
                     </li>
                     <li class="teaser-item">
-                        <img src="images/location3.jpg" alt="Oslo" class="teaser-image">
-                        <h3>Oslo</h3>
-                        <p>Short description of Location 3.</p>
-                        <button class="teaser-button" href='oslo.html'>View Details</button>
+                        <article>
+                            <img src="images/location3.jpg" alt="Oslo" class="teaser-image">
+                            <h3>Oslo</h3>
+                            <p>Short description of Location 3.</p>
+                            <a class="teaser-button" href='locations/oslo.html' aria-label="View details about Oslo">View Details</a>
+                        </article>
                     </li>
                 </ul>
             </section>
@@ -65,7 +71,7 @@
                     <li class="criteria-item">Job market</li>
                     <li class="criteria-item">Awareness of live</li>
                 </ul>
-                <button class="criteria-button" href='criteria.html'>Learn more</button>
+                <a class="criteria-button" href='criteria.html'>Learn more</a>
             </section>
             <section class="teaser-about" aria-labelledby="about-me-heading">
                 <div class="about-text">
@@ -75,11 +81,11 @@
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                     </p>
-                    <button class="about-button" href='about.html#cv'>CV</button>
-                    <button class="about-button" href='contact'>Let's connect</button>
+                    <a class="about-button" href='about.html#cv' aria-label="Go to my CV">CV</a>
+                    <a class="about-button" href='contact.html' aria-label="Go to contact page">Let's connect</a>
                 </div>
                 <div class="about-image">
-                    <img src="images/about-me.jpg" alt="A picture of me" class="about-image">
+                    <img src="images/about-me.jpg" alt="Portrait photo of the website owner" class="about-image">
                 </div>
             </section>
         </main>
@@ -89,18 +95,22 @@
                 <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
                 <li><a href="/" target="_blank">GitHub</a></li>
             </ul>
-            <ul class="quicklinks">
+            <div class="quicklinks">
                 <h3> Quicklinks</h3>
-                <li><a href="criteria.html">Home</a></li>
-                <li><a href="about.html">Locations</a></li>
-                <li><a href="connect.html">Criteria</a></li>
-            </ul>
-            <ul class="contact">
+                <ul>
+                    <li><a href="criteria.html">Home</a></li>
+                    <li><a href="about.html">Locations</a></li>
+                    <li><a href="connect.html">Criteria</a></li>
+                </ul> 
+            </div>
+            <div class="contact">
                 <h3>About me</h3>
-                <li><a href="criteria.html">CV</a></li>
-                <li><a href="about.html">Projects</a></li>
-                <li><a href="connect.html">Contact details</a></li>
-            </ul>
+                <ul>
+                    <li><a href="criteria.html">CV</a></li>
+                    <li><a href="about.html">Projects</a></li>
+                    <li><a href="connect.html">Contact details</a></li>
+                </ul>   
+            </div>
         </footer>
     </body>
 
