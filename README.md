@@ -1,4 +1,4 @@
-# 🌍 Mein Web-Portfolio: PLaces, where I want to work and why
+# 🌍 Mein Web-Portfolio: Places, where I want to work and why
 
 Dies ist ein responsives, persönliches Webportfolio, das Städte zeigt, in denen ich mir vorstellen kann zu arbeiten – inklusive meiner Beweggründe.  
 Außerdem enthält es meinen Lebenslauf, Projekte aus Studium und Eigeninitiative sowie Kontaktmöglichkeiten.
