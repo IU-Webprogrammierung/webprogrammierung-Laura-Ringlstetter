@@ -11,6 +11,7 @@ Außerdem enthält es meinen Lebenslauf, Projekte aus Studium und Eigeninitiativ
 ## Funktionen
 
 - Sprachen: Deutsch/Englisch/Spanisch
+- Barrierfreiheit
 
 ## Responsives Design
 
