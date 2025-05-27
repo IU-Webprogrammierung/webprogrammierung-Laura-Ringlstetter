@@ -1,12 +1,27 @@
+@use "base";
+
 .navbar {
     .navbar-container{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: 20px;
         height: 60px;
         a{
-            
+            font-size: base.$font_size_2;
+            text-decoration:none;
+            color:#000;
+        }
+        .navbar-menu{
+            list-style: none;
+            display: flex;
+            gap: 48px;
+            .connect-button{
+                background-color:#000;
+                color:#fff;
+                padding: 14px 24px;
+                border-radius: 8px;
+            }
         }
     }
 }

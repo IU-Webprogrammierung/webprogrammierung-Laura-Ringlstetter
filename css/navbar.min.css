@@ -1,1 +1,1 @@
-.navbar .navbar-container{display:flex;justify-content:space-between;align-items:center;padding:0 20px;height:60px}
+.navbar .navbar-container{display:flex;justify-content:space-between;align-items:center;padding:20px;height:60px}.navbar .navbar-container a{font-size:clamp(1.125rem,1.081rem + .1408vw,1.25rem);text-decoration:none;color:#000}.navbar .navbar-container .navbar-menu{list-style:none;display:flex;gap:48px}.navbar .navbar-container .navbar-menu .connect-button{background-color:#000;color:#fff;padding:14px 24px;border-radius:8px}
