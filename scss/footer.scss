@@ -1,0 +1,34 @@
+@use 'base';
+
+#footer{
+    width: 100%;
+    border-top: 1px solid #E6E6E6;
+    padding: 6rem 10rem;
+    display:flex;
+    justify-content:space-between;
+    a, h3{
+        font-size: base.$fontsize_20;
+        line-height: 2em;
+    }
+    a{
+        text-decoration: none;
+        color: #000;   
+    }
+    .sitename{
+        font-size: base.$fontsize_24;
+    }
+    ul{
+        list-style: none;
+    }
+    #footer-right, .social-media, #footer-left{
+        display: flex;
+        gap: 0.6rem;
+    }
+    #footer-right{
+        gap: 8rem;
+    }
+    #footer-left{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

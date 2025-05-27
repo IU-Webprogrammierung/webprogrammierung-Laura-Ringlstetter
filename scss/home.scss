@@ -1,0 +1,99 @@
+@use "base";
+
+.hero, .intro, .teaser-locations, .teaser-criteria, .teaser-about{
+    @extend %header;
+    @extend %frame_1;
+    margin-bottom: 6rem;
+}
+.about-button, .intro-button, .criteria-button{
+    @extend %button;
+    margin-top: 2rem;
+}
+.hero{
+    img{
+        width: 100%;
+        height: calc(100dvh - 130px);
+        object-fit: cover;
+    }
+}
+.teaser-locations{
+    .teaser{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        list-style: none;
+        margin-top: 3rem;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        img{
+            width:100%;
+            height:auto;
+            aspect-ratio: 1.2 / 1;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        p{
+            color: base.$font_color_1;
+        }
+        h3{
+            margin: 1.5rem 0 0.2rem 0;
+        }
+    }
+}
+.teaser-criteria{
+    .criteria-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 1000px;
+        list-style: none;
+        margin-top: 3rem;
+        gap: 2rem;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+.teaser-about{
+    @extend %frame_2;
+    display:grid;
+    grid-template-areas:
+    'header header'
+    'text image';
+    column-gap: 6rem;
+    #about-me-heading{
+        grid-area: header;
+        margin-bottom: 2rem;
+    }
+    #about-left-side{
+        grid-area: text;
+        p{
+            margin: 1rem 0;
+            color: base.$font_color_1;
+        }
+        h3{
+            margin-top: 2rem;
+        }
+    }
+    #about-image{
+        grid-area: image;
+        aspect-ratio: 1.2 / 1;
+        overflow: hidden;
+        border-radius: 8px;
+        padding-right: 5rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    .about-button{
+        &:nth-of-type(2){
+            background-color: #E6E6E6;
+            color: #000;
+        }
+    }
+}

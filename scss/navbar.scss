@@ -2,25 +2,25 @@
 
 .navbar {
     .navbar-container{
+        @extend %frame_1;
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
-        height: 60px;
+        padding: 25px 60px;
+        height: 110px;
         a{
-            font-size: base.$font_size_2;
+            font-size: base.$fontsize_20;
             text-decoration:none;
             color:#000;
+            font-weight: 500;
         }
         .navbar-menu{
             list-style: none;
             display: flex;
+            align-items:center;
             gap: 48px;
             .connect-button{
-                background-color:#000;
-                color:#fff;
-                padding: 14px 24px;
-                border-radius: 8px;
+                @extend %button;
             }
         }
     }

@@ -7,14 +7,14 @@
         <meta name="description" content="NextDesk: Your guide to finding the perfect desk space. Explore locations, criteria, and learn more about us.">
         <title>NextDesk - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/styles.min.css">
-        <link rel="stylesheet" type="text/css" href="css/navbar.min.css">
+        <link rel="stylesheet" type="text/css" href="css/home.min.css">
     </head>
     <body>
         <!--Header wird als Komponente eingebunden-->
         <header id="header"></header>
         <main id="main" tabindex="-1"> <!--Main content area with tabindex for screen readers--> 
             <section class="hero" aria-labelledby="hero-image">
-                <img src="images/hero-image.jpg" alt="A modern office space with desks and computers" class="hero-image">
+                <img src="images/heroimage.jpg" alt="A modern office space with desks and computers" class="hero-image">
             </section>
             <section class="intro" aria-labelledby="intro-heading">
                 <h1 id="intro-heading">Welcome to NextDesk</h1>
@@ -29,26 +29,29 @@
                 <ul class="teaser">
                     <li class="teaser-item">
                         <article> <!-- Teaser sind inhaltlich eigenständig -->
-                            <img src="images/location1.jpg" alt="Barcelona" class="teaser-image">
-                            <h3>Barcelona</h3>
-                            <p>Short description of Location 1.</p>
-                            <a class="teaser-button" href='locations/barcelona.html' aria-label="View details about Barcelona">View Details</a>
+                            <a class="teaser-button" href='locations/barcelona.html' aria-label="View details about Barcelona">
+                                <img src="images/barcelona.jpg" alt="Barcelona" class="teaser-image">
+                                <h3>Barcelona</h3>
+                                <p>Short description of Barcelona</p>
+                            </a> 
                         </article> 
                     </li>
                     <li class="teaser-item">
                         <article>
-                            <img src="images/location2.jpg" alt="Buenos Aires" class="teaser-image">
-                            <h3>Buenos Aires</h3>
-                            <p>Short description of Location 2.</p>
-                            <a class="teaser-button" href='locations/buenosaires.html' aria-label="View details about Buenos Aires">View Details</a>
+                            <a class="teaser-button" href='locations/buenosaires.html' aria-label="View details about Buenos Aires">
+                                <img src="images/buenos_aires.jpg" alt="Buenos Aires" class="teaser-image">
+                                <h3>Buenos Aires</h3>
+                                <p>Short description of Buenos Aires</p>
+                            </a>  
                         </article>   
                     </li>
                     <li class="teaser-item">
                         <article>
-                            <img src="images/location3.jpg" alt="Oslo" class="teaser-image">
-                            <h3>Oslo</h3>
-                            <p>Short description of Location 3.</p>
-                            <a class="teaser-button" href='locations/oslo.html' aria-label="View details about Oslo">View Details</a>
+                            <a class="teaser-button" href='locations/oslo.html' aria-label="View details about Oslo">
+                                <img src="images/oslo.jpg" alt="Oslo" class="teaser-image">
+                                <h3>Oslo</h3>
+                                <p>Short description of Oslo</p>
+                            </a>                         
                         </article>
                     </li>
                 </ul>
@@ -56,26 +59,42 @@
             <section class="teaser-criteria" aria-labelledby="criteria-heading">
                 <h2 id="criteria-heading">How did I choose these desired locations?</h2>
                 <ul class="criteria-list">
-                    <li class="criteria-item">Culture</li>
-                    <li class="criteria-item">Further education</li>
-                    <li class="criteria-item">Job market</li>
-                    <li class="criteria-item">Awareness of live</li>
+                    <li class="criteria-item">
+                        <img src="icons/world.svg" alt="World icon">
+                        <h3>Culture</h3>
+                        <p> Short description about the criteria culture </p>
+                    </li>
+                    <li class="criteria-item">
+                        <img src="icons/education.svg" alt="Education icon">
+                        <h3>Further education</h3>
+                        <p> Short description about the criteria further education </p>
+                    </li>
+                    <li class="criteria-item">
+                        <img src="icons/job.svg" alt="Job icon">
+                        <h3>Job market</h3>
+                        <p> Short description about the criteria job market </p>
+                    </li>
+                    <li class="criteria-item">
+                        <img src="icons/life.svg" alt="Life icon">
+                        <h3>Quality of life</h3>
+                        <p> Short description about the criteria quality of life </p>
+                    </li>
                 </ul>
                 <a class="criteria-button" href='criteria.html'>Learn more</a>
             </section>
             <section class="teaser-about" aria-labelledby="about-me-heading">
-                <div class="about-text">
-                    <h2 id="about-me-heading">About me</h2>
-                    <p>Short description about me.</p>
+                <h2 id="about-me-heading">About me</h2>
+                <div id="about-left-side">
+                    <h3>Short description about me.</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                     </p>
                     <a class="about-button" href='about.html#cv' aria-label="Go to my CV">CV</a>
                     <a class="about-button" href='contact.html' aria-label="Go to contact page">Let's connect</a>
                 </div>
-                <div class="about-image">
-                    <img src="images/about-me.jpg" alt="Portrait photo of the website owner" class="about-image">
+                <div id="about-image">
+                    <img src="images/person.jpg" alt="Portrait photo of the website owner" class="about-image">
                 </div>
             </section>
         </main>
