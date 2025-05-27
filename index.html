@@ -6,22 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="NextDesk: Your guide to finding the perfect desk space. Explore locations, criteria, and learn more about us.">
         <title>NextDesk - Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="Css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.min.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar" aria-label="Main Navigation">
-                <div class="navbar-container">
-                    <a href="index.html">NextDesk</a>
-                <ul class="navbar__menu">
-                    <li class="navbar-item"><a href="locations.html" aria-label="Go to Page Locations">Locations</a></li>
-                    <li class="navbar-item"><a href="criteria.html" aria-label="Go to Page Criteria">Criteria</a></li>
-                    <li class="navbar-item"><a href="about.html" aria-label="Go to Page About me">About me</a></li>
-                    <li class="navbar-item"><a href="contact.html" aria-label="Go to contact page">Let's connect</a></li>
-                </ul>
-                </div>
-            </nav>
-        </header>
+        <!--Header wird als Komponente eingebunden-->
+        <header id="header"></header>
         <main id="main" tabindex="-1"> <!--Main content area with tabindex for screen readers--> 
             <section class="hero" aria-labelledby="hero-image">
                 <img src="images/hero-image.jpg" alt="A modern office space with desks and computers" class="hero-image">
@@ -89,29 +79,9 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2025 NextDesk. All rights reserved.</p>
-            <ul class="social-media">
-                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-                <li><a href="/" target="_blank">GitHub</a></li>
-            </ul>
-            <div class="quicklinks">
-                <h3> Quicklinks</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="criteria.html">Criteria</a></li>
-                </ul> 
-            </div>
-            <div class="contact">
-                <h3>About me</h3>
-                <ul>
-                    <li><a href="about#cv.html">CV</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact details</a></li>
-                </ul>   
-            </div>
-        </footer>
+        <!--Footer wird als Komponente eingebunden-->
+        <footer id="footer"></footer>
+        <script src="js/components.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,9 @@
+@use "base";
+$primary_color: #3498db;
+$secondary_color: #2ecc71;
+
+body{
+    font-family: base.$font_1;
+    background-color: #f4f4f4;
+    color: #333;
+}

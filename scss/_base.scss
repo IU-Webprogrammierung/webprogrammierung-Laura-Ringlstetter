@@ -1,0 +1,8 @@
+$primary_color: #3498db;
+$secondary_color: #2ecc71;
+
+$font_1: 'Inter', sans-serif;
+
+//Fontsize
+$font_size_1: 14px;
+$font_size_2: clamp(1.125rem, 1.081rem + 0.1408vw, 1.25rem);  //20px Desktop --> 18px Mobile
