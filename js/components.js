@@ -10,5 +10,5 @@ async function loadComponent(id, url) {
 }
 
 // Lädt den Header und Footer beim Laden der Seite
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
+loadComponent("header", "/components/header.html");
+loadComponent("footer", "/components/footer.html");

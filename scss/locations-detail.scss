@@ -1,0 +1,64 @@
+@use "base";
+
+.intro{
+    @extend %frame_1;
+    @extend %header;
+    img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2.5 / 1;
+        margin: 3rem auto;
+        border-radius:10px;
+        object-fit: cover;
+    }
+}
+.location-text{
+    @extend %frame_2;
+}
+.location-images{
+    @extend %frame_1;
+    margin: 3rem auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    img{
+        width:100%;
+        height:auto;
+        aspect-ratio: 1.5 / 1;
+        border-radius: 10px;
+        object-fit:cover;
+    }
+}
+.other-locations{
+    @extend %frame_1;
+    @extend %header;
+    margin: 5rem auto;
+    .locations-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap:2rem;
+        list-style: none;
+        margin-top: 2rem;
+        img{
+            width:100%;
+            height:auto;
+            aspect-ratio: 1.4 / 1;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        a{
+            text-decoration:none;
+            
+            .location-name{
+                font-weight:500;
+                color: #000;
+            }
+            .location-country{
+                color: base.$font_color_1;
+            }
+            p{
+                margin-left:0.5rem;
+            }
+        }
+    }
+}
