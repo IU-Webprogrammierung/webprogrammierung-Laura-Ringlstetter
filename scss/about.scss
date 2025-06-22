@@ -37,7 +37,7 @@
         display:grid;
         grid-template-columns: 1fr 1px 1fr;
         gap: 8rem;
-        margin-bottom: 8rem;
+        margin-bottom: 15rem;
         position:relative;
         &::before {
             content: "";
@@ -93,5 +93,31 @@
             }
         }
 
+    }
+}
+.teaser-projects{
+    width: 90%;
+    margin: 15rem auto 3rem auto;
+    ul{
+        list-style: none;
+        .criteria-item{
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media(max-width:1024px){
+    .cv{
+        .timeline{
+            display:block;
+            &::before{
+                display:none;
+            }
+            .timeline-item{
+                &:nth-child(odd) {
+                    grid-column: unset;
+                    
+                }
+            }
+        }
     }
 }

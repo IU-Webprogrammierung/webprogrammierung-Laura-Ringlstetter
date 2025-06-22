@@ -24,4 +24,16 @@
             }
         }
     }
+    @media(max-width:550px){
+        .navbar-container {
+            > a {
+                display:none;
+            }
+            .navbar-menu{
+                width:100%;
+                gap: 15px;
+                justify-content:space-between;
+            }
+        }
+    }
 }

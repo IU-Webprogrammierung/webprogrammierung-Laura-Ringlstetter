@@ -70,3 +70,19 @@
         }
     }
 }
+@media(max-width:650px){
+    #locations-teaser{
+        .location-item{
+            grid-template-areas: 
+            'text'
+            'image';
+            grid-template-columns: 1fr;
+            .location-text{
+                grid-area:text;
+            }
+            img{
+                grid-area: image;
+            }
+        }
+    }
+}

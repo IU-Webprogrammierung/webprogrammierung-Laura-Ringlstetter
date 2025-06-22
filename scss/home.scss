@@ -97,3 +97,38 @@
         }
     }
 }
+
+//Responsive Section
+@media(max-width:1440px){
+    .teaser-about{
+        padding:0;
+        #about-me-heading{
+            margin-bottom:0;
+        }
+    }
+}
+@media(max-width:650px){
+    .teaser-about{ 
+        grid-template-areas:
+        'header'
+        'text'
+        'image';
+        row-gap:1rem;
+        #about-image{
+            padding-right:0;
+        }
+    }
+    
+}
+@media(max-width:360px){
+    .teaser-locations{
+        .teaser-item{
+            width: 80%;
+        }
+    }
+    .teaser-criteria{
+        .criteria-item{
+            width:80%;
+        }
+    }
+}
