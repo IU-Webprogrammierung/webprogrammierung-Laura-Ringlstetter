@@ -1,8 +1,8 @@
 @use "base";
-.intro, .cv{
+.intro, .cv, .teaser-projects{
     @extend %header;
     @extend %frame_1;
-    margin-bottom: 6rem;
+    margin-bottom: base.$margin_medium;
 }
 
 .intro{
@@ -96,12 +96,28 @@
     }
 }
 .teaser-projects{
-    width: 90%;
-    margin: 15rem auto 3rem auto;
+    h2{
+        margin-bottom: 4rem;
+    }
     ul{
         list-style: none;
         .criteria-item{
             margin-bottom: 2rem;
+            img{
+                width: 100%;
+                height: auto;
+                aspect-ratio: 2.9 / 1;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            h3{
+                margin: 1.5rem 0;
+            }
+            .project-button{
+                @extend %button;
+                margin-top: 1rem;
+                display: inline-block;
+            }
         }
     }
 }
