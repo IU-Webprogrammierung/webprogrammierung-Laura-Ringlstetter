@@ -14,13 +14,17 @@
         <header id="header"></header>
         <main id="main" tabindex="-1"> <!--Main content area with tabindex for screen readers--> 
             <section class="hero" aria-labelledby="hero-image">
-                <img src="images/heroimage.jpg" alt="A modern office space with desks and computers" class="hero-image">
+                <picture>
+                    <source srcset="images/heroimage.avif" type="image/avif">
+                    <img src="images/heroimage.jpg" alt="A modern office space with desks and computers" class="hero-image">
+                </picture>
             </section>
             <section class="intro" aria-labelledby="intro-heading">
                 <h1 id="intro-heading">Welcome to NextDesk</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                     et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                     Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                <p class="subheader"> Where work could take me – and why. </p>
+                <p>
+                    This site combines portfolio and perspective: I highlight countries and cities where I could imagine working in the future – 
+                    each with a brief explanation. You'll also find my CV and selected projects that outline my professional background.
                 </p>
                 <a class="intro-button" href='about.html'>About me</a>
             </section>
@@ -30,27 +34,36 @@
                     <li class="teaser-item">
                         <article> <!-- Teaser sind inhaltlich eigenständig -->
                             <a class="teaser-button" href='locations/barcelona.html' aria-label="View details about Barcelona">
-                                <img src="images/barcelona/barcelona.jpg" alt="Barcelona" class="teaser-image">
+                                <picture>
+                                    <source srcset="images/barcelona/barcelona.avif" type="image/avif">
+                                    <img src="images/barcelona/barcelona.jpg" alt="Barcelona" class="teaser-image">
+                                </picture>
                                 <h3>Barcelona</h3>
-                                <p>Short description of Barcelona</p>
+                                <p>Barcelona combines a vibrant tech scene with a high quality of life, making it an appealing place to live and work.</p>
                             </a> 
                         </article> 
                     </li>
                     <li class="teaser-item">
                         <article>
                             <a class="teaser-button" href='locations/buenosaires.html' aria-label="View details about Buenos Aires">
-                                <img src="images/buenos_aires/buenos_aires.jpg" alt="Buenos Aires" class="teaser-image">
+                                <picture>
+                                    <source srcset="images/buenos_aires/buenos_aires.avif" type="image/avif">
+                                    <img src="images/buenos_aires/buenos_aires.jpg" alt="Buenos Aires" class="teaser-image">
+                                </picture>
                                 <h3>Buenos Aires</h3>
-                                <p>Short description of Buenos Aires</p>
+                                <p>Buenos Aires offers a dynamic cultural environment and a growing tech community, making it an interesting option for remote work and creative projects.</p>
                             </a>  
                         </article>   
                     </li>
                     <li class="teaser-item">
                         <article>
                             <a class="teaser-button" href='locations/oslo.html' aria-label="View details about Oslo">
-                                <img src="images/oslo/oslo.jpg" alt="Oslo" class="teaser-image">
+                                <picture>
+                                    <source srcset="images/oslo/oslo.avif" type="image/avif">
+                                    <img src="images/oslo/oslo.jpg" alt="Oslo" class="teaser-image">
+                                </picture>
                                 <h3>Oslo</h3>
-                                <p>Short description of Oslo</p>
+                                <p>Oslo stands out for its strong focus on sustainability, high living standards, and a well-connected tech ecosystem.</p>
                             </a>                         
                         </article>
                     </li>
@@ -62,45 +75,53 @@
                     <li class="criteria-item">
                         <img src="icons/world.svg" alt="World icon">
                         <h3>Culture</h3>
-                        <p> Short description about the criteria culture </p>
+                        <p> Choosing a place for its culture means valuing the daily environment, social norms, and creative atmosphere that shape both personal well-being and professional inspiration. </p>
                     </li>
                     <li class="criteria-item">
                         <img src="icons/education.svg" alt="Education icon">
                         <h3>Further education</h3>
-                        <p> Short description about the criteria further education </p>
+                        <p> Choosing a place for further education means seeking an environment that supports academic growth, offers access to new perspectives, and fosters long-term professional development. </p>
                     </li>
                     <li class="criteria-item">
                         <img src="icons/job.svg" alt="Job icon">
                         <h3>Job market</h3>
-                        <p> Short description about the criteria job market </p>
+                        <p> A strong job market can offer access to relevant industries, better career opportunities, and greater long-term stability in your professional path. </p>
                     </li>
                     <li class="criteria-item">
                         <img src="icons/life.svg" alt="Life icon">
                         <h3>Quality of life</h3>
-                        <p> Short description about the criteria quality of life </p>
+                        <p> A high quality of life contributes to overall well-being, balancing work with a healthy, safe, and enjoyable living environment. </p>
                     </li>
                 </ul>
                 <a class="criteria-button" href='criteria.html'>Learn more</a>
             </section>
             <section class="teaser-about" aria-labelledby="about-me-heading">
-                <h2 id="about-me-heading">About me</h2>
                 <div id="about-left-side">
-                    <h3>Short description about me.</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                    <h2>About me.</h2>
+                    <p>I'm a web developer currently working towards a BSc in Computer Science. 
+                        Beyond developing my technical skills, I'm interested in gaining more experience through working in different countries. 
+                    </p>
+                    <p>
+                        My goal is to find places where I can combine professional growth with cultural exploration — 
+                        environments that allow me to contribute to meaningful projects while also learning from new perspectives, work styles, and social contexts. 
+                        I see working abroad not just as a way to improve my skills, but as a way to better understand how technology, 
+                        collaboration, and culture intersect across different parts of the world.
                     </p>
                     <a class="about-button" href='about.html#cv' aria-label="Go to my CV">CV</a>
                     <a class="about-button" href='contact.html' aria-label="Go to contact page">Let's connect</a>
                 </div>
                 <div id="about-image">
-                    <img src="images/person.jpg" alt="Portrait photo of the website owner" class="about-image">
+                    <picture>
+                        <source srcset="images/person.avif" type="image/avif">
+                        <img src="images/person.jpg" alt="Portrait photo of the website owner" class="about-image">
+                    </picture>
                 </div>
             </section>
         </main>
         <!--Footer wird als Komponente eingebunden-->
         <footer id="footer"></footer>
         <script src="js/components.js"></script>
+        <script src="js/animations.js"></script>
     </body>
 
 </html>

@@ -1,20 +1,35 @@
 @use "base";
-
-.navbar{
-    .navbar-container{
-        position:absolute;
-        top:0;
-        left:0;
-        z-index:10;
+#header{
+    position:absolute;
+    a{
+        color: #fff;
+    }
+    .connect-button{
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+    .navbar-responsive{
+        background:transparent;
+        svg{
+            fill: #fff;
+        }
+    }
+}
+.scrolled{
+    #header{
         a{
+            color: #000;
+        }
+        .connect-button{
+            background-color: #000;
             color: #fff;
         }
-        .navbar-menu{
-            .connect-button{
-                background-color: transparent;
-                border: 1px solid #fff;
-            }
+        .navbar-responsive{
+        background:#fff;
+        svg{
+            fill: #000;
         }
+    }
     }
 }
 .hero{

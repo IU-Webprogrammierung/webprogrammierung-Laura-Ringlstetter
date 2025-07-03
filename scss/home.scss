@@ -2,8 +2,15 @@
 
 .hero, .intro, .teaser-locations, .teaser-criteria, .teaser-about{
     @extend %header;
+    
+}
+.hero{
     @extend %frame_1;
-    margin-bottom: 6rem;
+    margin-bottom: base.$margin_small;
+}
+.intro, .teaser-locations, .teaser-criteria, .teaser-about{
+    @extend %frame_2;
+    margin-bottom: base.$margin_medium;
 }
 .about-button, .intro-button, .criteria-button{
     @extend %button;
@@ -14,12 +21,18 @@
         width: 100%;
         height: calc(100dvh - 130px);
         object-fit: cover;
+    } 
+}
+.intro{
+    .subheader{
+        font-weight:bold;
     }
+
 }
 .teaser-locations{
     .teaser{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
         list-style: none;
         margin-top: 3rem;
@@ -30,7 +43,7 @@
         img{
             width:100%;
             height:auto;
-            aspect-ratio: 1.2 / 1;
+            aspect-ratio: 1.4 / 1;
             border-radius: 8px;
             object-fit: cover;
         }
@@ -45,7 +58,7 @@
 .teaser-criteria{
     .criteria-list{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         max-width: 1000px;
         list-style: none;
         margin-top: 3rem;
@@ -53,6 +66,12 @@
         img{
             width: 32px;
             height: 32px;
+        }
+        p{
+            color: base.$font_color_1;
+        }
+        h3{
+            margin-bottom: 0.4rem;
         }
     }
 }
@@ -82,7 +101,6 @@
         aspect-ratio: 1.2 / 1;
         overflow: hidden;
         border-radius: 8px;
-        padding-right: 5rem;
         img{
             width: 100%;
             height: 100%;
@@ -107,19 +125,18 @@
         }
     }
 }
-@media(max-width:650px){
-    .teaser-about{ 
+@media(max-width:1200px){
+    .teaser-about{
         grid-template-areas:
-        'header'
         'text'
         'image';
-        row-gap:1rem;
+        row-gap:3rem;
         #about-image{
-            padding-right:0;
+            aspect-ratio: 2.6 / 1;
         }
     }
-    
 }
+
 @media(max-width:360px){
     .teaser-locations{
         .teaser-item{

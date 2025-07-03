@@ -1,14 +1,29 @@
 async function loadComponent(id, url) {
-  // Holt die HTML-Komponente von der angegebenen URL
   const res = await fetch(url);
-
-  // Liest den Inhalt als Text (also HTML-Quelltext)
   const html = await res.text();
-
-  // Fügt den HTML-Inhalt in das Element mit der entsprechenden ID ein
   document.getElementById(id).innerHTML = html;
+
+  // Nur wenn der Header geladen wurde
+  if (id === "header") {
+    initBurgerMenu(); // Direkt initialisieren
+  }
 }
 
-// Lädt den Header und Footer beim Laden der Seite
 loadComponent("header", "/components/header.html");
 loadComponent("footer", "/components/footer.html");
+
+// Burger-Menü-Logik (direkt in components.js oder alternativ importieren)
+function initBurgerMenu() {
+  const burger = document.querySelector(".burger");
+  const mobileNav = document.querySelector(".modal");
+  const closeButton = document.querySelector(".close-button");
+
+  burger.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+    });
+  }
+}

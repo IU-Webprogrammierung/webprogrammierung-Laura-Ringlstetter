@@ -3,19 +3,26 @@
 #footer{
     width: 100%;
     border-top: 1px solid #E6E6E6;
+    background: #282828;
     padding: 6rem 10rem;
     display:flex;
     justify-content:space-between;
+    color: #fff;
     a, h3{
         font-size: base.$fontsize_20;
         line-height: 2em;
+        color: #fff;
+        font-weight: 300;
     }
     a{
-        text-decoration: none;
-        color: #000;   
+        text-decoration: none;  
+    }
+    h3{
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 1rem;
     }
     .sitename{
-        font-size: base.$fontsize_24;
+        font-size: base.$fontsize_34;
     }
     ul{
         list-style: none;

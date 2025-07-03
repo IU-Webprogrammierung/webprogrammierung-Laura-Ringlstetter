@@ -1,10 +1,11 @@
 @import 'fonts';
 
-$primary_color: #3498db;
+$primary_color: #282828;
 $secondary_color: #f4f4f4;
 $background_color: #e6e6e6;
 
 $font_color_1: #828282;
+$button_color: #282828;
 
 $font_1: 'Inter', sans-serif;
 
@@ -15,6 +16,10 @@ $fontsize_24: clamp(1.25rem, 1.162rem + 0.2817vw, 1.5rem);
 $fontsize_34: clamp(1.625rem, 1rem + 2vw, 2.125rem);
 $fontsize_48: clamp(1.875rem, 1.4789rem + 1.2676vw, 3rem);
 $fontsize_64: clamp(2.5rem, 1.9718rem + 1.6901vw, 4rem);
+
+//Margins
+$margin_small: clamp(1.25rem, -0.536rem + 4.762vw, 3.75rem);
+$margin_medium: clamp(5rem, 7.679rem + -7.143vw, 1.25rem);
 
 //Frames
 %frame_1{
@@ -31,6 +36,9 @@ $fontsize_64: clamp(2.5rem, 1.9718rem + 1.6901vw, 4rem);
     padding: 0 100px;
     margin: 0 auto;
     max-width: 1820px;
+    @media(max-width:650px){
+        padding: 0 20px;
+    }
 }
 
 %header{
@@ -53,10 +61,11 @@ $fontsize_64: clamp(2.5rem, 1.9718rem + 1.6901vw, 4rem);
 }
 
 %button{
-    background-color:#000;
+    background-color:$button_color;
     color:#fff;
-    padding: 14px 24px;
+    padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
+    height: fit-content;
 }
