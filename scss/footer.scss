@@ -2,8 +2,7 @@
 
 #footer{
     width: 100%;
-    border-top: 1px solid #E6E6E6;
-    background: #282828;
+    background: base.$primary_color;
     padding: 6rem 10rem;
     display:flex;
     justify-content:space-between;
@@ -18,8 +17,9 @@
         text-decoration: none;  
     }
     h3{
-        border-bottom: 1px solid lightgrey;
+        font-weight: 500;
         margin-bottom: 1rem;
+        font-size: base.$fontsize_24;
     }
     .sitename{
         font-size: base.$fontsize_34;

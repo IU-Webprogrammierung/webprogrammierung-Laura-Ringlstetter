@@ -37,18 +37,9 @@
         display:grid;
         grid-template-columns: 1fr 1px 1fr;
         gap: 8rem;
-        margin-bottom: 15rem;
+        padding-bottom: 15rem;
         position:relative;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1px;
-            background-color: base.$font_color_1;
-        }
+        
         .timeline-item{
             background-color: base.$background_color;
             border-radius: 30px;
@@ -72,13 +63,27 @@
                 background-color: base.$font_color_1;
                 border-radius: 50%;
             }
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(50% + 3rem);
+                bottom: 0;
+                left: calc(100% + 8rem);
+                width: 1px;
+                background-color: base.$font_color_1;
+            }
 
             &:nth-child(even) {
                 grid-column: 3;
                 transform: translateY(calc(50% + 4rem));
-                &::before {
-                left: -8rem;
+                    &::before, &::after {
+                    left: -8rem;
+                }
             }
+            &:last-child {
+                &::after{
+                    display:none;
+                }
             }
             
             .jobtitle{
@@ -96,13 +101,14 @@
     }
 }
 .teaser-projects{
+    max-width: 1250px;
     h2{
         margin-bottom: 4rem;
     }
     ul{
         list-style: none;
         .criteria-item{
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             img{
                 width: 100%;
                 height: auto;
@@ -118,6 +124,26 @@
                 margin-top: 1rem;
                 display: inline-block;
             }
+            article{
+                background-color: base.$background_color;
+                padding: 2rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+@media(max-width: 1300px) {
+    .cv .timeline {
+        gap: 4rem;
+        .timeline-item{
+            &::before, &::after{
+                left: calc(100% + 4rem);
+            }
+            &:nth-child(even) {
+                &::before, &::after{
+                    left: -4rem;
+                }
+            }
         }
     }
 }
@@ -125,13 +151,17 @@
     .cv{
         .timeline{
             display:block;
-            &::before{
-                display:none;
-            }
+            padding-bottom: 5rem;
             .timeline-item{
+                margin-bottom: 2rem;
                 &:nth-child(odd) {
-                    grid-column: unset;
-                    
+                    grid-column: unset;    
+                }
+                &:nth-child(even) {
+                    transform: none;  
+                }
+                &::before, &::after{
+                    display:none;
                 }
             }
         }

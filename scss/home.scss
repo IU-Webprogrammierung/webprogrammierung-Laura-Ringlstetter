@@ -24,8 +24,14 @@
     } 
 }
 .intro{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
     .subheader{
         font-weight:bold;
+    }
+    p{
+        color: base.$font_color_1;
     }
 
 }
@@ -113,6 +119,14 @@
             background-color: #E6E6E6;
             color: #000;
         }
+    }
+}
+
+//Animationseffekte
+.visible {
+    &.intro{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
