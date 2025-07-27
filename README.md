@@ -5,13 +5,21 @@ Außerdem enthält es meinen Lebenslauf, Projekte aus Studium und Eigeninitiativ
 
 ## Verwendete Technologien
 
-- HTML5 / CSS3
+- HTML5 / CSS3 /SCSS
 - JavaScript
 
 ## Funktionen
 
-- Sprachen: Deutsch/Englisch/Spanisch
-- Barrierfreiheit
+- Modularer Aufbau mit SCSS Strukturen_ @extend für wiederverwendbare Layoutkomponenten (%header, %frame_1, ...)
+- Responsive Grid-System: mit auto-fit und minmax() + Breakpoints
+- Visuelle Animationen beim Scrollen: klassengesteuert mit Intersection Observer mit Delay
+- Hover-Effekt bei Bildern mit Skalierung (transform: scale(1.1))
+- Barrierfreiheit: aria-labelledy, tabindex="-1" + alt-Texte + semantische HTML-Elemente (section, article, main, ...)
+- JavaScript-Funktionalität: Sticky-Navigation bei Scroll
+- Ladeoptimierung: Bilder werden per loading="lazy" geladen
+- SEO-Optimierung: Titel + Meta-Descriptions mit relevanten Keywords
+- Verwendung von AVIF-Bildern: Umwandlung der Bilder ins avif-Format für bessere SEO und schnellere Ladezeiten
+- Logo und Favicon erstellt mit Figma
 
 ## Responsives Design
 

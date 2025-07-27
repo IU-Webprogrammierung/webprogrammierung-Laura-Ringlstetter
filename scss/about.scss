@@ -182,3 +182,12 @@
         }
     }
 }
+@media(max-width:750px){
+    .intro{
+        grid-template-columns: 1fr;
+        gap: 4%;
+        img{
+            aspect-ratio: 2.6 / 1;
+        }
+    }
+}
