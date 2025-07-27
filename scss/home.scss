@@ -167,13 +167,11 @@
         }
     }
 }
-@media(max-width: 670px){
+@media(max-width: 1024px){
     .hero{
         height: 65dvh;
         img{
-            width: 100%;
             height: 65dvh;
-            object-fit: cover;
         } 
     }
 }
@@ -188,5 +186,11 @@
         .criteria-item{
             width:80%;
         }
+    }
+    .hero{
+        height: 50dvh;
+        img{
+            height: 50dvh;
+        } 
     }
 }
