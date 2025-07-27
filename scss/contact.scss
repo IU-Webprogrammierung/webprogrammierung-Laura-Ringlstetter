@@ -1,0 +1,20 @@
+@use "base";
+
+.contact-intro, .contact-info{
+    @extend %frame_3;
+    @extend %header;
+    margin-bottom: base.$margin_small;
+    padding-top: base.$margin_small;
+    text-align:center;
+    a {
+        @extend %button;
+        margin-bottom: 1rem;
+    }
+    ul{
+        list-style: none;
+    }
+    h2{
+        font-size: base.$fontsize_24;
+        margin-bottom: 1rem;
+    }
+}

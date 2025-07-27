@@ -7,20 +7,33 @@ window.addEventListener('scroll', () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  if (!document.querySelector(".hero")) {
+    document.body.classList.add("no-hero");
+  }
+});
+
 //Animationseffekte
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".intro");
+  const elements = document.querySelectorAll(".teaser .teaser-item, #about-image, .location-image, .timeline-item");
 
   const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    let delay = 0;
+
+    entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // Optional: nur einmal beobachten
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, delay);
+
+        delay += 700; 
+        observer.unobserve(entry.target); 
       }
     });
   }, {
-    threshold: 0.1 // 10% des Elements muss sichtbar sein
+    threshold: 0.5
   });
 
   elements.forEach(el => observer.observe(el));
 });
+

@@ -5,8 +5,8 @@
     
 }
 .hero{
-    @extend %frame_1;
-    margin-bottom: base.$margin_small;
+    width: 100%;
+    height: 100dvh;
 }
 .intro, .teaser-locations, .teaser-criteria, .teaser-about{
     @extend %frame_2;
@@ -19,14 +19,13 @@
 .hero{
     img{
         width: 100%;
-        height: calc(100dvh - 130px);
+        height: 100dvh;
         object-fit: cover;
     } 
 }
 .intro{
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    margin-top: base.$margin_large;
+    width: 100%;
     .subheader{
         font-weight:bold;
     }
@@ -59,6 +58,12 @@
         h3{
             margin: 1.5rem 0 0.2rem 0;
         }
+        
+    }
+    .teaser-item{
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
     }
 }
 .teaser-criteria{
@@ -107,6 +112,9 @@
         aspect-ratio: 1.2 / 1;
         overflow: hidden;
         border-radius: 8px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
         img{
             width: 100%;
             height: 100%;
@@ -124,9 +132,9 @@
 
 //Animationseffekte
 .visible {
-    &.intro{
+    &.teaser-item, &#about-image{
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 

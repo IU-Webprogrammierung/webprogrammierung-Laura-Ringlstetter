@@ -1,17 +1,18 @@
 @use "base";
 
 #header{
-    position:relative;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
     z-index:10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
 }
 .navbar {
     a{
         font-size: base.$fontsize_20;
         text-decoration:none;
-        color:#000;
+        color:#fff;
         font-weight: 500;
     }
     .navbar-container{
@@ -100,9 +101,9 @@
         left: 0;
         width: 100%;
         z-index: 10;
-        background-color: #fff;
         .navbar-responsive{
             position: fixed;
         }
     }
 }
+

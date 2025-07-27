@@ -15,23 +15,7 @@
         }
     }
 }
-.scrolled{
-    #header{
-        a{
-            color: #000;
-        }
-        .connect-button{
-            background-color: #000;
-            color: #fff;
-        }
-        .navbar-responsive{
-        background:#fff;
-        svg{
-            fill: #000;
-        }
-    }
-    }
-}
+
 .hero{
     @extend %header;
     position: relative;
@@ -65,13 +49,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
         margin-bottom: 3rem;
-        img{
-            display:block;
-            width:100%;
-            height: auto;
-            aspect-ratio: 1.6 / 1;
-            border-radius: 30px;
-        }
+        
         .location-text{
             display:flex;
             flex-direction: column;
@@ -85,6 +63,27 @@
         }
     }
 }
+.location-image{
+    display:block;
+    width:100%;
+    height: auto;
+    aspect-ratio: 1.6 / 1;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+//Animationseffekte
+.visible {
+    &.location-image{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+//Responsive
 @media(max-width:650px){
     #locations-teaser{
         .location-item{

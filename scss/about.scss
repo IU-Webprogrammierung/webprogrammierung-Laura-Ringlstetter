@@ -132,6 +132,21 @@
         }
     }
 }
+.timeline-item{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+//Animationseffekte
+.visible {
+    &.timeline-item{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//Responsive section
 @media(max-width: 1300px) {
     .cv .timeline {
         gap: 4rem;
