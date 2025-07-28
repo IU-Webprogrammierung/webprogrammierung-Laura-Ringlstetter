@@ -108,3 +108,10 @@
         }
     }
 }
+@media(max-width:430px){
+    #locations-teaser {
+        .location-item .location-text{
+            margin-left: 0;
+        }
+    }
+}
