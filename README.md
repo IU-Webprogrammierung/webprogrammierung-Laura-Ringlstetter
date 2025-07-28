@@ -5,7 +5,7 @@ Außerdem enthält es meinen Lebenslauf, Projekte aus Studium und Eigeninitiativ
 
 ## Verwendete Technologien
 
-- HTML5 / CSS3 /SCSS
+- HTML5 / CSS3 / SCSS
 - JavaScript
 
 ## Funktionen
