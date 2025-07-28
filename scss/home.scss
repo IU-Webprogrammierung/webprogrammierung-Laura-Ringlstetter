@@ -178,8 +178,11 @@
 
 @media(max-width:430px){
     .teaser-locations{
+        h2{
+            text-align:center;
+        }
         .teaser-item{
-            width: 80%;
+            width: 100%;
         }
     }
     .teaser-criteria{
